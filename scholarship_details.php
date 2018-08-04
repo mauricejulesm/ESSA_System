@@ -4,7 +4,7 @@ $code = $_GET['code'];
 
                             //get the list of topics on the specific subject
                              
-                            $uniquery = "SELECT * from scholarships_mapping WHERE organization_i = $code";
+                            $uniquery = "SELECT * from scholarships_mapping WHERE organization_id = $code";
                             $uq = mysqli_query($conn, $uniquery);
 
                             while ($unirow = $uq->fetch_assoc()){
